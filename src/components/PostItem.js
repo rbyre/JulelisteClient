@@ -1,9 +1,7 @@
 import React from "react";
 import Axios from "axios";
-import { Link  } from 'react-router-dom';
 import "../styles/posts.css";
 
-import Header from "./Header";
 
 const PostItem = (props) => {
 
@@ -13,11 +11,11 @@ const PostItem = (props) => {
       });
     };
 
-  const detaljer = async (id) => {
-    await Axios.post("https://runar-juleliste.herokuapp.com/detaljer", {
-      id: id
-    });
-  };
+  // const detaljer = async (id) => {
+  //   await Axios.post("https://runar-juleliste.herokuapp.com/detaljer", {
+  //     id: id
+  //   });
+  // };
   
   return (
     <div>
